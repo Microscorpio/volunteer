@@ -1,0 +1,18 @@
+.breadcrumb{
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	color:$gray-base;
+	border-bottom:1px solid $gray-border;
+	span,i{
+		font-size: 12px;
+	}
+	i{
+		margin: 0 3px;
+		font-style: normal;
+	}
+	span.icon{
+		font-size: 16px;
+		vertical-align: middle;
+	}
+}

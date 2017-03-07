@@ -1,0 +1,91 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,p {
+	margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+	outline: 0;
+    list-style:none;
+    font-size: 14px;
+    font-family:'Microsoft YaHei', 'San-serif', 'Microsoft JhengHei', 'STXihei';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:active,
+a:hover,
+a:focus {
+    outline: 0;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    font-size: 0;
+    border:none;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after {
+	 visibility: hidden;
+	 display: block;
+	 font-size: 0;
+	 content: " ";
+	 clear: both;
+	 height: 0;
+ }
+
+.noBorder{
+    border:none !important;
+}
+
+.mt10{
+    margin-top: 10px !important;
+}
+
+.mt15{
+    margin-top: 15px !important;
+}
+
+.mt20{
+    margin-top: 20px !important;
+}
+
+body{
+    background-color: $gray-body;
+}
+
+.section{
+    width: $width;
+    height: auto;
+    margin: 0 auto;
+}

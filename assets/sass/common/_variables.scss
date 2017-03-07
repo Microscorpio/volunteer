@@ -1,0 +1,54 @@
+// variables
+// == Colors
+// ------------------------------------------------
+
+$gray-base:			#737373 !default;//默认字体颜色
+$gray-body:			#f2f2f2 !default;//body背景
+$gray-icon:	        #7a7a7a !default;//默认icon颜色
+$gray-deep:			#434242 !default;//深灰
+$gray-border:		#d9d9d9 !default;//默认border颜色
+
+$blue-base:			#1e83ee !default;//默认蓝色
+$blue-nav:			#1e83ee !default;//导航蓝色
+$blue-nav-active:	#186bc3 !default;//导航选中
+$blue-title:		#82b9f3 !default;//标题头部蓝色
+
+$orange-score:		#fd6624 !default;//分数
+
+// == width
+// ------------------------------------------------
+
+$width:1200px !default;//页面默认宽度
+
+// == other
+// ------------------------------------------------
+
+@mixin ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin borderRadius($s){
+	-webkit-border-radius: $s;
+	-moz-border-radius: $s;
+	-ms-border-radius: $s;
+	-o-border-radius: $s;
+	border-radius: $s;
+}
+
+@mixin transformScale($s) {
+    -webkit-transform: scale($s);
+    -moz-transform: scale($s);
+    -ms-transform: scale($s);
+    -o-transform: scale($s);
+    transform: scale($s);
+}
+
+@mixin transition($target , $s) {
+    -webkit-transition: $target $s;
+    -moz-transition: $target $s;
+    -ms-transition: $target $s;
+    -o-transition: $target $s;
+    transition: $target $s;
+}

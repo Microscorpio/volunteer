@@ -1,0 +1,117 @@
+.sys-wrapper{
+	width: 880px;
+	height: auto;
+	background-color: #fff;
+	border:1px solid #dfdfdf;
+	.my-release-layout{
+		width: 100%;
+		height: auto;
+		position: relative;
+		&:before{
+			position: absolute;
+			content: "";
+			width: 1px;
+			height: 100%;
+			background-color: #ebebeb;
+			left: 40px;
+			top: 40px;
+			z-index: 9;
+		}
+		&:after{
+			position: absolute;
+			content: "";
+			width: 30px;
+			height: 40px;
+			left: 30px;
+			bottom: -40px;
+			background-color: #fff;
+			z-index: 10;
+		}
+		.my-release-title{
+			width: 120px;
+			height: 40px;
+			margin-top: 10px;
+			margin-bottom: 55px;
+			-webkit-border-radius: 0 20px 20px 0;
+			-moz-border-radius: 0 20px 20px 0;
+			-ms-border-radius: 0 20px 20px 0;
+			-o-border-radius: 0 20px 20px 0;
+			border-radius: 0 20px 20px 0;
+			background-color: #7cb8f8;
+			h2{
+				line-height: 40px;
+				color: #fff;
+				font-size: 16px;
+				i.icon{
+					font-size: 24px;
+					vertical-align: middle;
+					margin: 0 5px;
+				}
+			}
+		}
+		.my-release-list{
+			width: 100%;
+			min-height: 50px;
+			height: auto;
+			padding-left: 70px;
+			padding-right: 160px;
+			margin-bottom: 25px;
+			overflow: hidden;
+			position: relative;
+			&:last-child:before,&.last:before{
+				position: absolute;
+				content: "";
+				width: 10px;
+				height: 100%;
+				left: 35px;
+				top: 0;
+				background-color: #fff;
+				z-index: 10;
+			}
+			.my-release{
+				position: relative;
+				h3{
+					position: absolute;
+					display: block;
+					width: 33px;
+					height: 33px;
+					text-align: center;
+					line-height: 33px;
+					@include borderRadius(50%);
+					background-color: #7cb8f8;
+					color: #3e90f0;
+					font-size: 14px;
+					left: -47px;
+					top: 0px;
+					z-index: 11;
+				}
+				.my-release-content{
+					width: 100%;
+					height: auto;
+					padding-top: 5px;
+					p{
+						font-size: 16px;
+						line-height: 20px;
+						color: #4f4f4f;
+						margin-bottom: 7px;
+					}
+					.my-release-img{
+						width: 100%;
+						height: auto;
+						font-size: 0;
+						a{
+							display: inline-block;
+							width: 180px;
+							height: 130px;
+							margin-right: 7px;
+							overflow: hidden;
+							img{
+								width: 180px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

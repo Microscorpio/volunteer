@@ -1,0 +1,136 @@
+.user-wrapper{
+	width: 300px;
+	height: auto;
+	overflow: hidden;
+	background-color: #fff;
+	.user-info{
+		width: 100%;
+		height: 122px;
+		overflow: hidden;
+		background: url("../images/pic_back.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		a.user-logo{
+			display: block;
+			width: 70px;
+			height: 70px;
+			margin: 15px auto;
+			border:1px solid $blue-base;
+			@include borderRadius(50%);
+			overflow: hidden;
+			background-clip: content-box;
+		}
+		p{
+			font-size: 14px;
+			color: #fff;
+			text-align: center;
+		}
+	}
+	.user-content{
+		width: 100%;
+		height: auto;
+		border:1px solid #f9f9f9;
+		.user-menu{
+			width: 100%;
+			height: auto;
+			padding: 20px 10px;
+			ul{
+				li{
+					width: 33%;
+					height: 40px;
+					float: left;
+					text-align: center;
+					border-left: 1px solid $gray-border;
+					&:first-child{
+						border-left: none;
+					}
+					a{
+						font-size: 14px;
+						color: $gray-base;
+						line-height: 20px;
+						span{
+							display: block;
+							color: $gray-deep;
+							&.score{
+								color: $orange-score;
+								i.icon{
+									font-size: 13px;
+									color: $gray-icon;
+								}
+							}
+						}
+						
+					}
+				}
+			}
+		}
+		.user-nav{
+			width: 100%;
+			height: auto;
+			dl{
+				dt,dd{
+					padding-left: 30px;
+				}
+				dt{
+					background-color: $gray-body;
+					color: $gray-icon;
+					line-height: 30px;
+					height: 30px;
+					font-size: 14px;
+					position: relative;
+					&:before,&:after{
+						position: absolute;
+						content: "";
+						width: 10px;
+						height: 30px;
+						background-color: $gray-body;
+						z-index: 9;
+					}
+					&:before{
+						left: -5px;
+						top: 0;
+					}
+					&:after{
+						right: -5px;
+						top: 0;
+					}
+					i{
+						font-size: 14px;
+						font-style: normal;
+						margin: 0 3px;
+					}
+				}
+				dd{
+					width: 100%;
+					height: 40px;
+					line-height: 40px;
+					border-top:1px solid $gray-border;
+					&:first-child{
+						border-top: none;
+					}
+					&.active,&:hover{
+						a{
+							color: $blue-base;
+							i{
+								color: $blue-base;
+							}
+						}
+					}
+					a{
+						display: inline-block;
+						width: 100%;
+						height: 40px;
+						font-size: 14px;
+						color: $gray-base;
+						i{
+							font-size: 20px;
+							margin-right: 8px;
+							vertical-align: middle;
+							color: $gray-icon;
+						}
+					}
+				}
+			}
+		}
+	}
+}
