@@ -1,0 +1,31 @@
+.vo-btn{
+	display: inline-block;
+	vertical-align: middle;
+	width: 75px;
+	height: 35px;
+	line-height: 35px;
+	@include borderRadius(5px);
+	border-width: 1px;
+	border-style: solid;
+	font-size: 16px;
+	text-align: center;
+	background-clip: padding-box;
+	background-color: #fff;
+	cursor: pointer;
+	&.vo-btn-lg{
+		width: 100px;
+	}
+	&.vo-btn-md{
+		width: 75px;
+	}
+	&.vo-btn-primary{
+		border-color: $blue-base;
+		background-color: $blue-base;
+		color: #fff;
+	}
+	&.vo-btn-cancel{
+		border-color: #a8a8a8;
+		background-color: #fff;
+		color: #a8a8a8;
+	}
+}

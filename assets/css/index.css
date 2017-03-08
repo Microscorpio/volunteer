@@ -94,6 +94,9 @@ body {
 .icon-wechat:before {
   content: "\e600"; }
 
+.icon-delete:before {
+  content: "\e607"; }
+
 .icon-weibo:before {
   content: "\e603"; }
 
@@ -103,7 +106,7 @@ body {
 .icon-Qzone:before {
   content: "\e661"; }
 
-.icon-01:before {
+.icon-username:before {
   content: "\e601"; }
 
 .icon-project:before {
@@ -256,6 +259,37 @@ body {
         .pagination ul li.active a {
           color: #fff; }
 
+.vo-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 75px;
+  height: 35px;
+  line-height: 35px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 16px;
+  text-align: center;
+  background-clip: padding-box;
+  background-color: #fff;
+  cursor: pointer; }
+  .vo-btn.vo-btn-lg {
+    width: 100px; }
+  .vo-btn.vo-btn-md {
+    width: 75px; }
+  .vo-btn.vo-btn-primary {
+    border-color: #1e83ee;
+    background-color: #1e83ee;
+    color: #fff; }
+  .vo-btn.vo-btn-cancel {
+    border-color: #a8a8a8;
+    background-color: #fff;
+    color: #a8a8a8; }
+
 .user-wrapper {
   width: 300px;
   height: auto;
@@ -280,7 +314,7 @@ body {
       -o-border-radius: 50%;
       border-radius: 50%;
       overflow: hidden;
-      background-clip: content-box; }
+      background-clip: padding-box; }
     .user-wrapper .user-info p {
       font-size: 14px;
       color: #fff;
@@ -474,11 +508,11 @@ body {
 .tab-layout {
   width: 100%;
   height: auto;
+  padding: 20px;
   background-color: #fff; }
   .tab-layout .tab-nav {
     width: 100%;
-    height: auto;
-    padding: 20px; }
+    height: auto; }
     .tab-layout .tab-nav ul li {
       float: left;
       width: 33.3333%;
@@ -503,8 +537,302 @@ body {
     width: 100%;
     height: auto; }
     .tab-layout .tab-content .tab-content-list {
+      width: 100%;
+      height: auto;
       display: none; }
       .tab-layout .tab-content .tab-content-list:first-child {
         display: block; }
+      .tab-layout .tab-content .tab-content-list .tab-paneType-school {
+        width: 100%;
+        height: 150px;
+        padding: 20px 0;
+        border-bottom: 1px solid #e8e8e8;
+        overflow: hidden; }
+        .tab-layout .tab-content .tab-content-list .tab-paneType-school .tab-pane-left {
+          width: 110px;
+          height: 110px;
+          padding: 4px;
+          overflow: hidden; }
+          .tab-layout .tab-content .tab-content-list .tab-paneType-school .tab-pane-left a {
+            display: block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #d9d9d9;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            overflow: hidden;
+            background-clip: padding-box; }
+            .tab-layout .tab-content .tab-content-list .tab-paneType-school .tab-pane-left a img {
+              width: 100px;
+              height: 100px; }
+        .tab-layout .tab-content .tab-content-list .tab-paneType-school .tab-pane-center {
+          width: -webkit-calc(100% - (120px + 102px));
+          width: -moz-calc(100% - (120px + 102px));
+          width: -o-calc(100% - (120px + 102px));
+          width: calc(100% - (120px + 102px));
+          height: auto;
+          padding: 15px 10px; }
+          .tab-layout .tab-content .tab-content-list .tab-paneType-school .tab-pane-center .tab-pane-center-info {
+            width: 100%;
+            height: 30px;
+            line-height: 30px; }
+            .tab-layout .tab-content .tab-content-list .tab-paneType-school .tab-pane-center .tab-pane-center-info:first-child {
+              margin-bottom: 20px; }
+            .tab-layout .tab-content .tab-content-list .tab-paneType-school .tab-pane-center .tab-pane-center-info a {
+              display: inline-block;
+              font-size: 22px;
+              color: #3e3e3e;
+              line-height: 30px;
+              float: left; }
+            .tab-layout .tab-content .tab-content-list .tab-paneType-school .tab-pane-center .tab-pane-center-info span {
+              display: block;
+              width: 30px;
+              height: 30px;
+              float: left;
+              font-size: 14px;
+              line-height: 30px;
+              margin-left: 5px;
+              text-align: center;
+              color: #fff;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -ms-border-radius: 50%;
+              -o-border-radius: 50%;
+              border-radius: 50%;
+              background-color: #87baf0; }
+              .tab-layout .tab-content .tab-content-list .tab-paneType-school .tab-pane-center .tab-pane-center-info span.deepColor {
+                background-color: #509ef1; }
+            .tab-layout .tab-content .tab-content-list .tab-paneType-school .tab-pane-center .tab-pane-center-info label {
+              font-size: 16px;
+              color: #595959;
+              margin-right: 20px; }
+        .tab-layout .tab-content .tab-content-list .tab-paneType-school .tab-pane-right {
+          width: 102px;
+          height: auto;
+          padding: 14px 0; }
+          .tab-layout .tab-content .tab-content-list .tab-paneType-school .tab-pane-right a.vo-btn:first-child {
+            margin-bottom: 10px; }
+      .tab-layout .tab-content .tab-content-list .tab-paneType-major {
+        width: 100%;
+        height: 115px;
+        overflow: hidden;
+        border-bottom: 1px solid #e8e8e8; }
+        .tab-layout .tab-content .tab-content-list .tab-paneType-major .tab-pane-left {
+          width: -webkit-calc(100% - 102px);
+          width: -moz-calc(100% - 102px);
+          width: -o-calc(100% - 102px);
+          width: calc(100% - 102px);
+          height: auto;
+          padding: 20px 0; }
+          .tab-layout .tab-content .tab-content-list .tab-paneType-major .tab-pane-left a {
+            font-size: 18px;
+            color: #3e3e3e;
+            line-height: 30px; }
+          .tab-layout .tab-content .tab-content-list .tab-paneType-major .tab-pane-left p {
+            line-height: 22px;
+            font-size: 14px;
+            color: #8b8b8b; }
+            .tab-layout .tab-content .tab-content-list .tab-paneType-major .tab-pane-left p label {
+              display: inline-block;
+              width: 170px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap; }
+        .tab-layout .tab-content .tab-content-list .tab-paneType-major .tab-pane-right {
+          width: 102px;
+          height: auto;
+          padding: 14px 0; }
+          .tab-layout .tab-content .tab-content-list .tab-paneType-major .tab-pane-right a.vo-btn:first-child {
+            font-size: 14px;
+            margin-bottom: 10px; }
+      .tab-layout .tab-content .tab-content-list .tab-paneType-expert {
+        width: 100%;
+        height: 115px;
+        background-color: #f5faff;
+        margin-top: 20px;
+        border-bottom: 1px solid #e5ecf5;
+        padding: 18px 0;
+        position: relative; }
+        .tab-layout .tab-content .tab-content-list .tab-paneType-expert:before, .tab-layout .tab-content .tab-content-list .tab-paneType-expert:after {
+          position: absolute;
+          content: "";
+          width: 20px;
+          height: 100%;
+          background-color: #f5faff;
+          border-bottom: 1px solid #e5ecf5; }
+        .tab-layout .tab-content .tab-content-list .tab-paneType-expert:before {
+          top: 0;
+          left: -20px; }
+        .tab-layout .tab-content .tab-content-list .tab-paneType-expert:after {
+          top: 0;
+          right: -20px; }
+        .tab-layout .tab-content .tab-content-list .tab-paneType-expert .tab-pane-left {
+          width: 80px;
+          height: auto;
+          overflow: hidden; }
+          .tab-layout .tab-content .tab-content-list .tab-paneType-expert .tab-pane-left a {
+            display: block;
+            width: 78px;
+            height: 78px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            overflow: hidden;
+            background-clip: padding-box; }
+            .tab-layout .tab-content .tab-content-list .tab-paneType-expert .tab-pane-left a img {
+              width: 78px;
+              height: 78px; }
+        .tab-layout .tab-content .tab-content-list .tab-paneType-expert .tab-pane-center {
+          width: -webkit-calc(100% - (80px + 77px));
+          width: -moz-calc(100% - (80px + 77px));
+          width: -o-calc(100% - (80px + 77px));
+          width: calc(100% - (80px + 77px));
+          height: auto;
+          padding: 8px 20px; }
+          .tab-layout .tab-content .tab-content-list .tab-paneType-expert .tab-pane-center .tab-pane-center-info {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            overflow: hidden; }
+            .tab-layout .tab-content .tab-content-list .tab-paneType-expert .tab-pane-center .tab-pane-center-info:first-child {
+              margin-bottom: 8px; }
+            .tab-layout .tab-content .tab-content-list .tab-paneType-expert .tab-pane-center .tab-pane-center-info a {
+              font-size: 18px;
+              color: #4b4b4b;
+              line-height: 30px; }
+            .tab-layout .tab-content .tab-content-list .tab-paneType-expert .tab-pane-center .tab-pane-center-info span.mark {
+              background-color: #e1c12d;
+              padding: 3px 4px;
+              font-size: 14px;
+              color: #fff; }
+            .tab-layout .tab-content .tab-content-list .tab-paneType-expert .tab-pane-center .tab-pane-center-info label {
+              font-size: 12px;
+              color: #595959;
+              margin-right: 10px; }
+        .tab-layout .tab-content .tab-content-list .tab-paneType-expert .tab-pane-right {
+          width: 77px;
+          height: auto; }
+          .tab-layout .tab-content .tab-content-list .tab-paneType-expert .tab-pane-right a.vo-btn:first-child {
+            font-size: 16px;
+            margin-bottom: 10px; }
+      .tab-layout .tab-content .tab-content-list .tab-paneType-order {
+        width: 100%;
+        height: 135px;
+        border-bottom: 1px solid #e8e8e8;
+        padding: 20px 0; }
+        .tab-layout .tab-content .tab-content-list .tab-paneType-order .tab-pane-left {
+          width: 200px;
+          height: auto; }
+          .tab-layout .tab-content .tab-content-list .tab-paneType-order .tab-pane-left a {
+            display: block;
+            width: 195px;
+            height: 94px;
+            overflow: hidden;
+            border: 1px solid #d4d4d5; }
+            .tab-layout .tab-content .tab-content-list .tab-paneType-order .tab-pane-left a img {
+              width: 195px; }
+        .tab-layout .tab-content .tab-content-list .tab-paneType-order .tab-pane-center {
+          width: -webkit-calc(100% - (200px + 100px));
+          width: -moz-calc(100% - (200px + 100px));
+          width: -o-calc(100% - (200px + 100px));
+          width: calc(100% - (200px + 100px));
+          height: auto;
+          padding: 0 20px;
+          overflow: hidden; }
+          .tab-layout .tab-content .tab-content-list .tab-paneType-order .tab-pane-center dl dt a {
+            font-size: 18px;
+            color: #4b4b4b;
+            line-height: 30px; }
+          .tab-layout .tab-content .tab-content-list .tab-paneType-order .tab-pane-center dl dd {
+            line-height: 22px;
+            text-align: left; }
+            .tab-layout .tab-content .tab-content-list .tab-paneType-order .tab-pane-center dl dd span {
+              font-size: 14px;
+              color: #6d6d6d; }
+            .tab-layout .tab-content .tab-content-list .tab-paneType-order .tab-pane-center dl dd i.icon {
+              color: #a9a9a9; }
+        .tab-layout .tab-content .tab-content-list .tab-paneType-order .tab-pane-right {
+          width: 100px;
+          height: 100%;
+          text-align: right;
+          position: relative; }
+          .tab-layout .tab-content .tab-content-list .tab-paneType-order .tab-pane-right a i.icon {
+            color: #adadad;
+            font-size: 18px; }
+          .tab-layout .tab-content .tab-content-list .tab-paneType-order .tab-pane-right .money {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            right: 0; }
+            .tab-layout .tab-content .tab-content-list .tab-paneType-order .tab-pane-right .money span {
+              font-size: 16px;
+              color: #ff402c; }
+      .tab-layout .tab-content .tab-content-list .tab-paneType-video, .tab-layout .tab-content .tab-content-list .tab-paneType-appointment {
+        width: 100%;
+        height: 135px;
+        border-bottom: 1px solid #e8e8e8;
+        padding: 20px 0; }
+        .tab-layout .tab-content .tab-content-list .tab-paneType-video .tab-pane-left, .tab-layout .tab-content .tab-content-list .tab-paneType-appointment .tab-pane-left {
+          width: 150px;
+          height: auto; }
+          .tab-layout .tab-content .tab-content-list .tab-paneType-video .tab-pane-left a, .tab-layout .tab-content .tab-content-list .tab-paneType-appointment .tab-pane-left a {
+            display: block;
+            width: 134px;
+            height: 94px;
+            overflow: hidden;
+            border: 1px solid #d4d4d5;
+            position: relative; }
+            .tab-layout .tab-content .tab-content-list .tab-paneType-video .tab-pane-left a:after, .tab-layout .tab-content .tab-content-list .tab-paneType-appointment .tab-pane-left a:after {
+              position: absolute;
+              width: 134px;
+              height: 94px;
+              content: "";
+              background-color: rgba(0, 0, 0, 0.5);
+              top: 0;
+              left: 0;
+              right: 0;
+              z-index: 9; }
+            .tab-layout .tab-content .tab-content-list .tab-paneType-video .tab-pane-left a i.icon, .tab-layout .tab-content .tab-content-list .tab-paneType-appointment .tab-pane-left a i.icon {
+              position: absolute;
+              display: block;
+              width: 40px;
+              height: 40px;
+              font-size: 40px;
+              color: #fff;
+              top: 50%;
+              left: 50%;
+              margin-left: -20px;
+              margin-top: -20px;
+              z-index: 10; }
+            .tab-layout .tab-content .tab-content-list .tab-paneType-video .tab-pane-left a img, .tab-layout .tab-content .tab-content-list .tab-paneType-appointment .tab-pane-left a img {
+              width: 134px; }
+        .tab-layout .tab-content .tab-content-list .tab-paneType-video .tab-pane-right, .tab-layout .tab-content .tab-content-list .tab-paneType-appointment .tab-pane-right {
+          width: -webkit-calc(100% - 150px);
+          width: -moz-calc(100% - 150px);
+          width: -o-calc(100% - 150px);
+          width: calc(100% - 150px);
+          height: 100%;
+          padding-right: 130px;
+          overflow: hidden; }
+          .tab-layout .tab-content .tab-content-list .tab-paneType-video .tab-pane-right a, .tab-layout .tab-content .tab-content-list .tab-paneType-appointment .tab-pane-right a {
+            display: inline-block;
+            width: 100%;
+            height: 30px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 18px;
+            color: #3e3e3e; }
+          .tab-layout .tab-content .tab-content-list .tab-paneType-video .tab-pane-right p, .tab-layout .tab-content .tab-content-list .tab-paneType-appointment .tab-pane-right p {
+            font-size: 14px;
+            color: #8c8c8c;
+            line-height: 22px; }
+      .tab-layout .tab-content .tab-content-list .tab-paneType-appointment .tab-pane-left a:after {
+        display: none; }
 
 /*# sourceMappingURL=index.css.map */

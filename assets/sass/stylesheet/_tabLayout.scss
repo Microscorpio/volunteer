@@ -1,11 +1,11 @@
 .tab-layout{
 	width: 100%;
 	height: auto;
+	padding:20px;
 	background-color: #fff;
 	.tab-nav{
 		width: 100%;
 		height: auto;
-		padding:20px;
 		ul{
 			li{
 				float: left;
@@ -37,9 +37,363 @@
 		width: 100%;
 		height: auto;
 		.tab-content-list{
+			width: 100%;
+			height: auto;
 			display: none;
 			&:first-child{
 				display: block;
+			}
+			.tab-paneType-school{
+				width: 100%;
+				height: 150px;
+				padding: 20px 0;
+				border-bottom: 1px solid #e8e8e8;
+				overflow: hidden;
+				.tab-pane-left{
+					width: 110px;
+					height: 110px;
+					padding: 4px;
+					overflow: hidden;
+					a{
+						display: block;
+						width: 100px;
+						height: 100px;
+						border:1px solid $gray-border;
+						@include borderRadius(50%);
+						overflow: hidden;
+						background-clip: padding-box;
+						img{
+							width: 100px;
+							height: 100px;
+						}
+					}
+				}
+				.tab-pane-center{
+					width: -webkit-calc(100% - (120px + 102px));
+					width: -moz-calc(100% - (120px + 102px));
+					width: -o-calc(100% - (120px + 102px));
+					width: calc(100% - (120px + 102px));
+					height: auto;
+					padding: 15px 10px;
+					.tab-pane-center-info{
+						width: 100%;
+						height: 30px;
+						line-height: 30px;
+						&:first-child{
+							margin-bottom: 20px;
+						}
+						a{
+							display: inline-block;
+							font-size: 22px;
+							color: #3e3e3e;
+							line-height: 30px;
+							float: left;
+						}
+						span{
+							display: block;
+							width: 30px;
+							height: 30px;
+							float: left;
+							font-size: 14px;
+							line-height: 30px;
+							margin-left: 5px;
+							text-align: center;
+							color: #fff;
+							@include borderRadius(50%);
+							background-color: #87baf0;
+							&.deepColor{
+								background-color: #509ef1;
+							}
+						}
+						label{
+							font-size: 16px;
+							color: #595959;
+							margin-right: 20px;
+						}
+					}
+				}
+				.tab-pane-right{
+					width: 102px;
+					height: auto;
+					padding: 14px 0;
+					a.vo-btn{
+						&:first-child{
+							margin-bottom: 10px;
+						}
+					}
+				}
+			}
+			.tab-paneType-major{
+				width: 100%;
+				height: 115px;
+				overflow: hidden;
+				border-bottom: 1px solid #e8e8e8;
+				.tab-pane-left{
+					width: -webkit-calc(100% - 102px);
+					width: -moz-calc(100% - 102px);
+					width: -o-calc(100% - 102px);
+					width: calc(100% - 102px);
+					height: auto;
+					padding: 20px 0;
+					a{
+						font-size: 18px;
+						color: #3e3e3e;
+						line-height: 30px;
+					}
+					p{
+						line-height: 22px;
+						font-size: 14px;
+						color: #8b8b8b;
+						label{
+							display: inline-block;
+							width: 170px;
+							@include ellipsis;
+						}
+					}
+				}
+				.tab-pane-right{
+					width: 102px;
+					height: auto;
+					padding: 14px 0;
+					a.vo-btn{
+						&:first-child{
+							font-size: 14px;
+							margin-bottom: 10px;
+						}
+					}
+				}
+			}
+			.tab-paneType-expert{
+				width: 100%;
+				height: 115px;
+				background-color: #f5faff;
+				margin-top: 20px;
+				border-bottom: 1px solid #e5ecf5;
+				padding: 18px 0;
+				position: relative;
+				&:before,&:after{
+					position: absolute;
+					content: "";
+					width: 20px;
+					height: 100%;
+					background-color: #f5faff;
+					border-bottom: 1px solid #e5ecf5;
+				}
+				&:before{
+					top: 0;
+					left: -20px;
+				}
+				&:after{
+					top: 0;
+					right: -20px;
+				}
+				.tab-pane-left{
+					width: 80px;
+					height: auto;
+					overflow: hidden;
+					a{
+						display: block;
+						width: 78px;
+						height: 78px;
+						@include borderRadius(50%);
+						overflow: hidden;
+						background-clip: padding-box;
+						img{
+							width: 78px;
+							height: 78px;
+						}
+					}
+				}
+				.tab-pane-center{
+					width: -webkit-calc(100% - (80px + 77px));
+					width: -moz-calc(100% - (80px + 77px));
+					width: -o-calc(100% - (80px + 77px));
+					width: calc(100% - (80px + 77px));
+					height: auto;
+					padding: 8px 20px;
+					.tab-pane-center-info{
+						width: 100%;
+						height: 30px;
+						line-height: 30px;
+						overflow: hidden;
+						&:first-child{
+							margin-bottom: 8px;
+						}
+						a{
+							font-size: 18px;
+							color: #4b4b4b;
+							line-height: 30px;
+						}
+						span.mark{
+							background-color: #e1c12d;
+							padding: 3px 4px;
+							font-size: 14px;
+							color: #fff;
+						}
+						label{
+							font-size: 12px;
+							color: #595959;
+							margin-right: 10px;
+						}
+					}
+				}
+				.tab-pane-right{
+					width: 77px;
+					height: auto;
+					a.vo-btn{
+						&:first-child{
+							font-size: 16px;
+							margin-bottom: 10px;
+						}
+					}
+				}
+			}
+			.tab-paneType-order{
+				width: 100%;
+				height: 135px;
+				border-bottom: 1px solid #e8e8e8;
+				padding: 20px 0;
+				.tab-pane-left{
+					width: 200px;
+					height: auto;
+					a{
+						display: block;
+						width: 195px;
+						height: 94px;
+						overflow: hidden;
+						border:1px solid #d4d4d5;
+						img{
+							width: 195px;
+						}
+					}
+				}
+				.tab-pane-center{
+					width: -webkit-calc(100% - (200px + 100px));
+					width: -moz-calc(100% - (200px + 100px));
+					width: -o-calc(100% - (200px + 100px));
+					width: calc(100% - (200px + 100px));
+					height: auto;
+					padding: 0 20px;
+					overflow: hidden;
+					dl{
+						dt{
+							a{
+								font-size: 18px;
+								color: #4b4b4b;
+								line-height: 30px;
+							}
+						}
+						dd{
+							line-height: 22px;
+							text-align: left;
+							span{
+								font-size: 14px;
+								color: #6d6d6d;
+							}
+							i.icon{
+								color: #a9a9a9;
+							}
+						}
+					}
+				}
+				.tab-pane-right{
+					width: 100px;
+					height: 100%;
+					text-align: right;
+					position: relative;
+					a{
+						i.icon{
+							color: #adadad;
+							font-size: 18px;
+						}
+					}
+					.money{
+						position: absolute;
+						width: 100%;
+						bottom: 0;
+						right: 0;
+						span{
+							font-size: 16px;
+							color: #ff402c;
+						}
+					}
+				}
+			}
+			.tab-paneType-video,.tab-paneType-appointment{
+				width: 100%;
+				height: 135px;
+				border-bottom: 1px solid #e8e8e8;
+				padding: 20px 0;
+				.tab-pane-left{
+					width: 150px;
+					height: auto;
+					a{
+						display: block;
+						width: 134px;
+						height: 94px;
+						overflow: hidden;
+						border:1px solid #d4d4d5;
+						position: relative;
+						&:after{
+							position: absolute;
+							width: 134px;
+							height: 94px;
+							content: "";
+							background-color: rgba(0,0,0,.5);
+							top: 0;
+							left: 0;
+							right: 0;
+							z-index: 9;
+						}
+						i.icon{
+							position: absolute;
+							display: block;
+							width: 40px;
+							height: 40px;
+							font-size: 40px;
+							color: #fff;
+							top: 50%;
+							left: 50%;
+							margin-left: -20px;
+							margin-top: -20px;
+							z-index: 10;
+						}
+						img{
+							width: 134px;
+						}
+					}
+				}
+				.tab-pane-right{
+					width: -webkit-calc(100% - 150px);
+					width: -moz-calc(100% - 150px);
+					width: -o-calc(100% - 150px);
+					width: calc(100% - 150px);
+					height: 100%;
+					padding-right: 130px;
+					overflow: hidden;
+					a{
+						display: inline-block;
+						width: 100%;
+						height: 30px;
+						@include ellipsis;
+						font-size: 18px;
+						color: #3e3e3e;
+					}
+					p{
+						font-size: 14px;
+						color: #8c8c8c;
+						line-height: 22px;
+					}
+				}
+			}
+			.tab-paneType-appointment{
+				.tab-pane-left{
+					a{
+						&:after{
+							display: none;
+						}
+					}
+				}
 			}
 		}
 	}

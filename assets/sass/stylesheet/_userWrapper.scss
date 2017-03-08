@@ -18,7 +18,7 @@
 			border:1px solid $blue-base;
 			@include borderRadius(50%);
 			overflow: hidden;
-			background-clip: content-box;
+			background-clip: padding-box;
 		}
 		p{
 			font-size: 14px;

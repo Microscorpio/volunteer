@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1488780922874'); /* IE9*/
-  src: url('iconfont.eot?t=1488780922874#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1488780922874') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1488780922874') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1488780922874#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1488962667609'); /* IE9*/
+  src: url('iconfont.eot?t=1488962667609#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1488962667609') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1488962667609') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1488962667609#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -17,13 +17,15 @@
 
 .icon-wechat:before { content: "\e600"; }
 
+.icon-delete:before { content: "\e607"; }
+
 .icon-weibo:before { content: "\e603"; }
 
 .icon-home:before { content: "\e602"; }
 
 .icon-Qzone:before { content: "\e661"; }
 
-.icon-01:before { content: "\e601"; }
+.icon-username:before { content: "\e601"; }
 
 .icon-project:before { content: "\e62e"; }
 
