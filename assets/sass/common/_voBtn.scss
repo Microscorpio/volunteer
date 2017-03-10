@@ -28,4 +28,9 @@
 		background-color: #fff;
 		color: #a8a8a8;
 	}
+	&.vo-btn-none{
+		background-color: transparent !important;
+		border: none !important;
+		color: #9b9b9b;
+	}
 }
