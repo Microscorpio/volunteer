@@ -961,4 +961,48 @@ table.vo-table {
       clear: both;
       height: 0; }
 
+.drawData-layout {
+  width: 100%;
+  height: auto;
+  padding: 20px; }
+  .drawData-layout ul li {
+    float: left;
+    width: 185px;
+    height: 285px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    margin-left: 32px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #e0e0e0;
+    overflow: hidden; }
+    .drawData-layout ul li:first-child {
+      margin-left: 0; }
+    .drawData-layout ul li h3 {
+      font-size: 18px;
+      color: #474747;
+      height: 60px;
+      line-height: 60px; }
+    .drawData-layout ul li p {
+      display: inline-block;
+      width: 100%;
+      height: 40px;
+      margin-top: 10px; }
+    .drawData-layout ul li .dataList {
+      position: relative;
+      width: 100%;
+      height: 150px;
+      overflow: hidden; }
+      .drawData-layout ul li .dataList canvas {
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        left: 50%;
+        top: 0;
+        margin-left: -70px; }
+        .drawData-layout ul li .dataList canvas.circle {
+          z-index: 9; }
+        .drawData-layout ul li .dataList canvas.solidCircle {
+          z-index: 1;
+          top: 0; }
+
 /*# sourceMappingURL=index.css.map */
