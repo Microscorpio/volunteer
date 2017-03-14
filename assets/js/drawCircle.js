@@ -12,19 +12,19 @@ function drawCircle(_options){
     var nBegin = Math.PI / 1.2;    //定义起始角度;
     var nEnd = Math.PI * 2;    //定义结束角度;
     ctx.textAlign = 'center';    //定义字体居中;
-    ctx.font = 'normal 32px Arial';    //定义字体大小字体样式;
+    ctx.font = 'normal 64px Arial';    //定义字体大小字体样式;
     ctx.fillStyle = '#1e83ee'    //文字填充样式为颜色;
-    var txtNum = Math.round(parseFloat((options.angle * 100))); //处理小数
+    var txtNum = Math.round(parseFloat(options.angle * 100)); //处理小数
     ctx.fillText(txtNum + '%', sCenter, sCenter);    //设置填充文字;
-    ctx.font = '14px Arial';
+    ctx.font = '28px Arial';
     ctx.fillStyle = '#4693e4' 
-    ctx.fillText('适合度', sCenter, sCenter + 20);
+    ctx.fillText('适合度', sCenter, sCenter + 40);
     ctx.lineCap = options.lineCap;
     ctx.strokeStyle = options.color;
 
     ctx.beginPath();    //设置起始路径，这段绘制360度背景;
     ctx.strokeStyle = options.color;
-    ctx.lineWidth = 1;
+    ctx.lineWidth = 2;
     ctx.fillStyle="#0000ff";
     ctx.arc(sCenter, sCenter, (sCenter - options.lineWidth), -nBegin, nEnd, false);
     ctx.stroke();
@@ -57,7 +57,7 @@ function drawCircle(_options){
 
     var ctx2 = oBoxSolid.getContext('2d');//画中间实心背景圆
     ctx2.beginPath();
-    ctx2.arc(sCenter, sCenter, (sCenter - options.lineWidth-8), -nBegin, nEnd, false);
+    ctx2.arc(sCenter, sCenter, (sCenter - options.lineWidth-16), -nBegin, nEnd, false);
     ctx2.fillStyle="#f5faff";//填充颜色
     ctx2.fill();//画实心圆
     ctx2.closePath();
